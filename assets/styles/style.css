@@ -10,3 +10,44 @@
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.main-focus {
+  display: grid;
+  grid-template-rows: 0.5fr, 2fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "main-focus__title"
+    "main-focus__content";
+}
+
+.main-focus__title {
+  grid-area: main-focus__title;
+  text-align: left;
+}
+
+.main-focus__content {
+  grid-area: main-focus__content;
+}
+
+.main-focus__content_wrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr, 2fr, 1fr, 3fr;
+  grid-template-areas: "image_one primary_mission image_two secondary_mission";
+}
+
+.main-focus__content_primary-mission {
+  grid-area: primary_mission;
+}
+
+.main-focus__content_secondary-mission {
+  grid-area: secondary_mission;
+}
+
+.main-focus__image_one {
+  grid-area: image_one;
+}
+
+.main-focus__image_two {
+  grid-area: image_two;
+}
