@@ -51,3 +51,161 @@
 .main-focus__image_two {
   grid-area: image_two;
 }
+
+.contacts {
+  margin-top: 120px;
+  margin-bottom: 120px;
+
+}
+
+.contacts__title {
+  color: #BDBDBD;
+  font-family: Roboto;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 64px;
+  margin-bottom: 22px;
+
+}
+
+.contacts__inner {
+  display: flex;
+  margin-bottom: 77px;
+}
+
+.contacts__form {
+  max-width: 391px;
+  width: 100%;
+  margin-right: 30px;
+
+}
+
+.contacts__form-name,
+.contacts__form-phone,
+.contacts__form-email,
+.contacts__form-interested,
+.contacts__form-textarea {
+  display: block;
+  width: 100%;
+  padding: 14px 21px;
+  background: #F3F3F3;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.contacts__form-textarea {
+  margin-bottom: 0;
+  height: 147px;
+}
+
+.contacts__form ::placeholder {
+  color: #8D8D8D;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.56px;
+}
+
+.contacts__link {
+  width: 222px;
+  padding: 30px 49px;
+  background-color: #333;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+
+}
+
+.contacts__link::after {
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 9px;
+  background-image: url('../images/icons/arrow-right.svg');
+  background-repeat: no-repeat;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #2C2C2C;
+}
+
+.footer__top {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__info,
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__info {
+  width: 103px;
+}
+
+.footer__contacts {
+  width: 345px;
+}
+
+.footer__info-text,
+.footer__contacts-text,
+.footer__social-text {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.footer__info-link,
+.footer__contacts-link {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.footer__social-box {
+  display: flex;
+  justify-content: space-between;
+  width: 193px;
+}
+
+.footer__bottom-text {
+  color: rgba(200, 200, 200, 0.50);
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 24px;
+  text-align: center;
+}
