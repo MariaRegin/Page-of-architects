@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet" />
-  
+
   <link rel="stylesheet" href="assets/styles/normalize.css" />
   <link rel="stylesheet" href="assets/styles/style.css" />
   <title>Page of architects</title>
@@ -29,12 +29,12 @@
         <div class="nav__certifications">certifications</div>
         <div class="nav__contacts">contacts</div>
       </nav>
-      </div>
-    </header>
-    <main>
-      <!-- раздел, где project lorum -->
-      <section class="project-lorum">
-        <div class="project-lorum__left_path">
+  </div>
+  </header>
+  <main>
+    <!-- раздел, где project lorum -->
+    <section class="project-lorum">
+      <div class="project-lorum__left_path">
         <h2 class="project-lorum__title">project lorum</h2>
         <div class="project-lorum__button__left">
           <img src="assets/images/button_left.png" alt="button left">
@@ -49,36 +49,37 @@
       <div class="project-lorum__right_path">
         <img src="assets/images/main_building_foto1.png" class="building__foto" alt="building foto">
       </div>
-      </section>
-      <!-- раздел, где about -->
-      <section></section>
-      <!-- раздел, где main focus -->
-      <section class="main-focus">
-        <h2 class="main-focus__title">Main Focus/Mission Statement</h2>
-        <div class="main-focus__content main-focus__content_wrapper">
-          <img class="main-focus__image main-focus__image_one" src="assets/images/pictures/one.png" alt="mission one" />
-          <p class="main-focus__content main-focus__content_primary-mission">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            efficitur, lectus et facilisis placerat.
-          </p>
-          <img class="main-focus__image main-focus__image_two" src="assets/images/pictures/two.png" alt="mission two" />
-          <p class="main-focus__content main-focus__content_secondary-mission">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            efficitur, lectus et facilisis placerat, magna mauris porttitor
-            tortor, a auctor est felis ut nisl.
-          </p>
-        </div>
-      </section>
-      <!-- our projects -->
-      <section></section>
-      <!-- contact us -->
-      <section class="contacts">
+    </section>
+    <!-- раздел, где about -->
+    <section></section>
+    <!-- раздел, где main focus -->
+    <section class="main-focus">
+      <h2 class="main-focus__title">Main Focus/Mission Statement</h2>
+      <div class="main-focus__content main-focus__content_wrapper">
+        <img class="main-focus__image main-focus__image_one" src="assets/images/pictures/one.png" alt="mission one" />
+        <p class="main-focus__content main-focus__content_primary-mission">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+          efficitur, lectus et facilisis placerat.
+        </p>
+        <img class="main-focus__image main-focus__image_two" src="assets/images/pictures/two.png" alt="mission two" />
+        <p class="main-focus__content main-focus__content_secondary-mission">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+          efficitur, lectus et facilisis placerat, magna mauris porttitor
+          tortor, a auctor est felis ut nisl.
+        </p>
+      </div>
+    </section>
+    <!-- our projects -->
+    <section></section>
+    <!-- contact us -->
+    <section class="contacts">
+      <div class="container">
         <h2 class="contacts__title">Contact Us</h2>
         <div class="contacts__inner">
-          <form class="contacts__form" action="">
+          <form class="contacts__form">
             <input type="text" class="contacts__form-name" placeholder="Name" />
-            <input type="number" class="contacts__form-phone" placeholder="Phone Number*" />
-            <input type="email" class="contacts__form-email" placeholder="E-mail*" />
+            <input type="number" class="contacts__form-phone" placeholder="Phone Number" />
+            <input type="email" class="contacts__form-email" placeholder="E-mail" />
             <input type="text" class="contacts__form-interested" placeholder="Interested In" />
             <textarea class="contacts__form-textarea" cols="30" rows="10" placeholder="Message*"></textarea>
           </form>
@@ -86,9 +87,10 @@
             <img src="../Page-of-architects/assets/images/contacts_men.png" alt="form photo" />
           </div>
         </div>
-        <a href="#!" class="contacts__link">Send Email</a>
-      </section>
-    </main>
+        <button class="contacts__btn" type="submit">Send Email</button>
+      </div>
+    </section>
+  </main>
   </div>
   <footer class="footer">
     <div class="footer__top">
@@ -99,19 +101,28 @@
           </div>
           <div class="footer__info">
             <p class="footer__info-text">Information</p>
-            <a class="footer__info-link">Main</a>
-            <a class="footer__info-link">Gallery</a>
-            <a class="footer__info-link">Projects</a>
-            <a class="footer__info-link">Certifications</a>
-            <a class="footer__info-link">Contacts</a>
+            <a href="#!" class="footer__info-link" target="_blank">Main</a>
+            <a href="#!" class="footer__info-link" target="_blank">Gallery</a>
+            <a href="#!" class="footer__info-link" target="_blank">Projects</a>
+            <a href="#!" class="footer__info-link" target="_blank">Certifications</a>
+            <a href="#!" class="footer__info-link" target="_blank">Contacts</a>
           </div>
           <div class="footer__contacts">
             <p class="footer__contacts-text">Contacts</p>
-            <a href="#!" class="footer__contacts-link">1234 Sample Street
-              Austin Texas 78704</a>
-            <a href="#!" class="footer__contacts-link">512.333.2222</a>
-            <a href="#!" class="footer__contacts-link">sampleemail@gmail.com</a>
-
+            <a href="#!" class="footer__contacts-link">
+              <img src="./assets/images/icons/map.svg" alt="label image"
+                class="footer__contacts-img footer__contacts-label">
+              <span>1234 Sample Street<br>
+                Austin Texas 78704</span>
+            </a>
+            <a href="tel:5123332222" class="footer__contacts-link">
+              <img src="./assets/images/icons/phone.svg" alt="phone image" class="footer__contacts-img">
+              <span>512.333.2222</span>
+            </a>
+            <a href="mailto:sampleemail@gmail.com" class="footer__contacts-link footer__contacts-mail">
+              <img src="./assets/images/icons/mail.svg" alt="mail image" class="footer__contacts-img">
+              <span>sampleemail@gmail.com</span>
+            </a>
           </div>
           <div class="footer__social">
             <p class="footer__social-text">
