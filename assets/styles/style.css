@@ -10,7 +10,137 @@
   padding: 0 15px;
   margin: 0 auto;
 }
-
+.header{ 
+  display: flex;
+  align-items: center;
+width: 1440px;
+height: 102px;
+flex-shrink: 0;
+}
+.header__logo{
+width: 68.552px;
+height: 41.527px;
+margin-top: 29px;
+flex-shrink: 0;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; 
+}
+.nav__main{
+width: 68px;
+height: 11.657px;
+margin-right: 46px;
+margin-left: 344px;
+margin: top 44px;
+flex-shrink: 0;
+color: var(--Gray-1, #333);
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 12px; /* 100% */
+letter-spacing: 2.4px;
+text-transform: uppercase;
+}
+.main{
+  width: 68px;
+height: 11.657px;
+flex-shrink: 0;
+color: var(--Gray-1, #333);
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 12px; /* 100% */
+letter-spacing: 2.4px;
+text-transform: uppercase;
+}
+.main__low__line{
+  width: 68px;
+height: 0.971px;
+margin-top: 4px;
+flex-shrink: 0;
+}
+.main__top__line{
+width: 68px;
+height: 0.971px;
+flex-shrink: 0;
+margin-top: 39px; 
+}
+.nav__gallery{
+width: 65px;
+height: 12px;
+margin-right: 61px;
+color: var(--Gray-1, #333);
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 12px; /* 100% */
+letter-spacing: 2.4px;
+text-transform: uppercase;
+}
+.nav__projects{
+width: 76px;
+height: 11px;
+margin-right: 55px;
+flex-shrink: 0;
+color: var(--Gray-1, #333);
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 12px; /* 100% */
+letter-spacing: 2.4px;
+text-transform: uppercase;
+}
+.nav__certifications{
+width: 123px;
+height: 11px;
+margin-right: 49px;
+flex-shrink: 0;
+color: var(--Gray-1, #333);
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 12px; /* 100% */
+letter-spacing: 2.4px;
+text-transform: uppercase;
+}
+.nav__contacts{
+width: 79px;
+height: 11.657px;
+margin-right: 269px;
+flex-shrink: 0;
+color: var(--Gray-1, #333);
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 12px; /* 100% */
+letter-spacing: 2.4px;
+text-transform: uppercase;
+}
+.project-lorum{
+  display: flex;
+  flex-direction: row;
+}
+.project-lorum__left_path{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.building__foto{
+  width: 770px;
+height: 829px;
+margin-left: 535px;
+margin-right: 135px;
+margin-top: 105px;
+flex-shrink: 0;
+}
 .main-focus {
   display: grid;
   grid-template-rows: 0.5fr, 2fr;
