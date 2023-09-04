@@ -223,6 +223,7 @@
 .contacts__inner {
   display: flex;
   margin-bottom: 77px;
+  flex-wrap: wrap;
 }
 
 .contacts__form {
@@ -291,6 +292,10 @@
   color: red;
 }
 
+.contacts__img img {
+  width: 100%;
+}
+
 .contacts__btn {
   width: 222px;
   padding: 30px 49px;
@@ -331,8 +336,6 @@
 }
 
 .footer__inner {
-  /* display: flex;
-  justify-content: space-between; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -343,12 +346,7 @@
   flex-direction: column;
 }
 
-.footer__info {
-  width: 103px;
-}
-
 .footer__contacts {
-  width: 345px;
   justify-content: space-between;
 }
 
@@ -419,4 +417,115 @@
   line-height: 22px;
   padding: 24px;
   text-align: center;
+}
+
+/* media */
+@media screen and (max-width:1200px) {
+  .contacts {
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
+
+  .contacts__title {
+    text-align: center;
+  }
+
+  .contacts__form {
+    margin: 0 auto;
+  }
+
+  .contacts__img img {
+    display: none;
+    ;
+  }
+
+  .contacts__btn {
+    margin: 0 auto;
+  }
+
+  .contacts__inner {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .footer__inner {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+
+  .footer__contacts-link {
+    justify-content: center;
+  }
+
+  .footer__social-text,
+  .footer__info-text,
+  .footer__contacts-text {
+    text-align: center;
+  }
+
+  .footer__info-link,
+  .footer__contacts-link {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .contacts {
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+
+  .footer__top {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .footer__inner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer__logo,
+  .footer__info,
+  .footer__contacts {
+    margin-bottom: 40px;
+  }
+
+  .footer__info-text,
+  .footer__contacts-text,
+  .footer__social-text {
+    font-size: 24px;
+  }
+
+  .footer__info-link+.footer__info-link {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .contacts__title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .contacts__inner {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .contacts__title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .contacts__inner {
+    margin-bottom: 35px;
+  }
+
+  .contacts__btn {
+    padding: 25px 40px;
+
+  }
 }
