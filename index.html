@@ -76,13 +76,29 @@
       <div class="container">
         <h2 class="contacts__title">Contact Us</h2>
         <div class="contacts__inner">
+
           <form class="contacts__form">
-            <input type="text" class="contacts__form-name" placeholder="Name" />
-            <input type="number" class="contacts__form-phone" placeholder="Phone Number" />
-            <input type="email" class="contacts__form-email" placeholder="E-mail" />
+            <input type="text" class="contacts__form-name" placeholder="Name" required />
+
+            <label for="phone" class="placeinput">
+              <input required type="number" id="phone" class="contacts__form-phone" />
+              <span class="place_holder">Phone Number<span>*</span></span>
+            </label>
+
+            <label for="email1" class="placeinput">
+              <input required type="email" class="contacts__form-email" id="email1" />
+              <span class="place_holder">E-mail<span>*</span></span>
+            </label>
+
             <input type="text" class="contacts__form-interested" placeholder="Interested In" />
-            <textarea class="contacts__form-textarea" cols="30" rows="10" placeholder="Message*"></textarea>
+
+            <label for="textarea" class="placeinput">
+              <textarea required class="contacts__form-textarea" cols="30" rows="10" id="textarea"></textarea>
+              <span class="place_holder">Message<span>*</span></span>
+            </label>
+
           </form>
+
           <div class="contacts__img">
             <img src="../Page-of-architects/assets/images/contacts_men.png" alt="form photo" />
           </div>

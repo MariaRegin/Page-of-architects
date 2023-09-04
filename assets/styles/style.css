@@ -261,6 +261,36 @@
   letter-spacing: 0.56px;
 }
 
+.placeinput {
+  position: relative;
+  overflow: hidden;
+}
+
+.place_holder {
+  z-index: 100;
+  cursor: text;
+  position: absolute;
+  left: 21px;
+  top: 14px;
+  color: #8D8D8D;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.56px;
+  display: none;
+}
+
+.placeinput input:invalid+.place_holder,
+.placeinput textarea:invalid+.place_holder {
+  display: inline;
+}
+
+.place_holder span {
+  color: red;
+}
+
 .contacts__btn {
   width: 222px;
   padding: 30px 49px;
