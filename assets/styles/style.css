@@ -163,17 +163,28 @@
 }
 
 .main-focus {
+  color: var(--Gray-4, #bdbdbd);
   display: grid;
   grid-template-rows: 0.5fr, 2fr;
   grid-template-columns: 1fr;
   grid-template-areas:
     "main-focus__title"
     "main-focus__content";
+  margin-top: 5rem;
 }
 
 .main-focus__title {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 64px;
+  margin-bottom: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 64px;
   grid-area: main-focus__title;
   text-align: left;
+  margin-bottom: 3rem;
 }
 
 .main-focus__content {
@@ -197,27 +208,27 @@
 
 .main-focus__image_one {
   grid-area: image_one;
+  margin-right: 2rem;
 }
 
 .main-focus__image_two {
   grid-area: image_two;
+  margin-right: 2rem;
 }
 
 .contacts {
   margin-top: 120px;
   margin-bottom: 120px;
-
 }
 
 .contacts__title {
-  color: #BDBDBD;
+  color: #bdbdbd;
   font-family: Roboto;
   font-size: 64px;
   font-style: normal;
   font-weight: 300;
   line-height: 64px;
   margin-bottom: 22px;
-
 }
 
 .contacts__inner {
@@ -230,7 +241,6 @@
   max-width: 391px;
   width: 100%;
   margin-right: 30px;
-
 }
 
 .contacts__form-name,
@@ -241,7 +251,7 @@
   display: block;
   width: 100%;
   padding: 14px 21px;
-  background: #F3F3F3;
+  background: #f3f3f3;
   border: none;
   margin-bottom: 10px;
 }
@@ -253,7 +263,7 @@
 }
 
 .contacts__form ::placeholder {
-  color: #8D8D8D;
+  color: #8d8d8d;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -273,7 +283,7 @@
   position: absolute;
   left: 21px;
   top: 14px;
-  color: #8D8D8D;
+  color: #8d8d8d;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -283,8 +293,8 @@
   display: none;
 }
 
-.placeinput input:invalid+.place_holder,
-.placeinput textarea:invalid+.place_holder {
+.placeinput input:invalid + .place_holder,
+.placeinput textarea:invalid + .place_holder {
   display: inline;
 }
 
@@ -312,21 +322,20 @@
   border: none;
   text-align: center;
   display: flex;
-
 }
 
 .contacts__btn::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 18px;
   height: 9px;
-  background-image: url('../images/icons/arrow-right.svg');
+  background-image: url("../images/icons/arrow-right.svg");
   background-repeat: no-repeat;
   right: 49px;
 }
 
 .footer {
-  background-color: #2C2C2C;
+  background-color: #2c2c2c;
 }
 
 .footer__top {
@@ -353,7 +362,7 @@
 .footer__info-text,
 .footer__contacts-text,
 .footer__social-text {
-  color: #FFF;
+  color: #fff;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -364,7 +373,7 @@
 
 .footer__info-link,
 .footer__contacts-link {
-  color: #FFF;
+  color: #fff;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -377,11 +386,11 @@
   text-decoration: none;
 }
 
-.footer__info-link+.footer__info-link {
+.footer__info-link + .footer__info-link {
   margin-top: 16px;
 }
 
-.footer__contacts-link+.footer__contacts-link {
+.footer__contacts-link + .footer__contacts-link {
   margin-top: 32px;
 }
 
@@ -409,7 +418,7 @@
 }
 
 .footer__bottom-text {
-  color: rgba(200, 200, 200, 0.50);
+  color: rgba(200, 200, 200, 0.5);
   font-family: Open Sans;
   font-size: 12px;
   font-style: normal;
@@ -420,7 +429,7 @@
 }
 
 /* media */
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
   .contacts {
     margin-bottom: 80px;
     margin-top: 80px;
@@ -436,7 +445,6 @@
 
   .contacts__img img {
     display: none;
-    ;
   }
 
   .contacts__btn {
@@ -448,7 +456,7 @@
   }
 }
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width: 1100px) {
   .footer__inner {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -471,7 +479,7 @@
   }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .contacts {
     margin-bottom: 60px;
     margin-top: 60px;
@@ -498,12 +506,12 @@
     font-size: 24px;
   }
 
-  .footer__info-link+.footer__info-link {
+  .footer__info-link + .footer__info-link {
     margin-top: 12px;
   }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
   .contacts__title {
     font-size: 50px;
     line-height: 60px;
@@ -514,7 +522,7 @@
   }
 }
 
-@media screen and (max-width:350px) {
+@media screen and (max-width: 350px) {
   .contacts__title {
     font-size: 35px;
     line-height: 40px;
@@ -526,6 +534,5 @@
 
   .contacts__btn {
     padding: 25px 40px;
-
   }
 }
