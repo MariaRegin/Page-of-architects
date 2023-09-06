@@ -14,7 +14,7 @@
 .header {
   display: flex;
   align-items: center;
-  width: 1440px;
+  width: 1200px;
   height: 102px;
   flex-shrink: 0;
 }
@@ -22,7 +22,6 @@
 .header__logo {
   width: 68.552px;
   height: 41.527px;
-  margin-top: 29px;
   flex-shrink: 0;
 }
 
@@ -135,7 +134,6 @@ font-style: normal;
 font-weight: 300;
 line-height: 64px; /* 100% */
 width: 277.763px;
-margin-left: 135px;
 
 }
 .lorum{
@@ -147,39 +145,39 @@ font-weight: 700;
 line-height: 64px; /* 100% */;
 width: 186px;
 margin-bottom: 90px;
-margin-left: 135px;
 }
 .arrows{
   display:flex;
   justify-content: start;
-  margin-left: 135px;
   margin-bottom: 94px;
+  
 }
 .slide_numbers{
   display: grid;
-  grid-template-columns:40% 1fr 50%;
+  grid-template-columns:20% 1fr 70%;
   grid-template-rows: 1fr ;
-  margin-bottom: 94px;
+  justify-content: start;
+  
 }
 .slide_number_01{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start:1 ;
   grid-row-end: 2;
+  justify-self: start;
   color: var(--Gray-4, #BDBDBD);
 font-family: Roboto;
 font-size: 24px;
 font-style: normal;
 font-weight: 400;
 line-height: 24px; /* 100% */
-margin-left: 135px;
 }
 .slash{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start:1 ;
   grid-row-end: 2;
-  text-align: center;
+  text-align:start;
   width: 43.822px;
 height:max-content;
 color: var(--Gray-4, #BDBDBD);
@@ -189,6 +187,7 @@ color: var(--Gray-4, #BDBDBD);
   grid-column-end: 4;
   grid-row-start:1 ;
   grid-row-end: 2;
+  justify-self: start;
   color: var(--Gray-4, #BDBDBD);
 font-family: Roboto;
 font-size: 24px;
@@ -201,9 +200,6 @@ width: 28.975px;
 .building__foto {
   width: 770px;
   height: 829px;
-  margin-left: 535px;
-  margin-right: 135px;
-  margin-top: 105px;
   flex-shrink: 0;
 }
 .button_view_project{
@@ -227,7 +223,6 @@ width: 28.975px;
   grid-template-rows: 60% 40%;
   width: 1170px;
   height: 435px;
-  margin-left: 135px;
   margin-top: 120px;
   margin-bottom: 150px;
   background-color: var(--1, #FBFBFB); ;
@@ -669,11 +664,20 @@ background: #FFF;
   }
 }
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:1200px){
   .header_logo{
     display: none;
   }
 .building_foto1{
   display: none;
+}
+.project-lorum{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-area: "building_foto1 building_foto1";
+}
+.nav{
+  align-content: start;
 }
 }
