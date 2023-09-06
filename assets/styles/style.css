@@ -298,6 +298,7 @@ a {
   flex-shrink: 0;
   background: #fff;
 }
+
 .main-focus {
   color: var(--Gray-4, #bdbdbd);
   display: grid;
@@ -358,8 +359,8 @@ a {
   grid-template-columns: 1fr;
   grid-template-areas:
     "our-projects__title"
-    "our-projects__content";
-  margin-top: 5rem;
+    "our-projects__gallery";
+  margin-top: 4rem;
 }
 
 .our-projects__title {
@@ -372,8 +373,26 @@ a {
   margin-bottom: 3rem;
 }
 
-.our-projects__content {
-  grid-area: our-projects__content;
+.our-projects__gallery {
+  display: grid;
+  grid-area: our-projects__gallery;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr 0.7fr;
+}
+
+.our-projects__image-rectangle {
+}
+
+.our-projects__image-building {
+}
+
+.our-projects__image-roof {
+}
+
+.our-projects__image-house {
+}
+
+.our-projects__image-bridge {
 }
 
 .contacts {
