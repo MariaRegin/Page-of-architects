@@ -125,17 +125,6 @@ a {
   grid-row-start: 1;
   grid-row-end: 2;
 }
-<<<<<<< HEAD
-.project{
-  color: var(--Gray-4, #BDBDBD);
-font-family: Roboto;
-font-size: 64px;
-font-style: normal;
-font-weight: 300;
-line-height: 64px; /* 100% */
-width: 277.763px;
-
-=======
 .project {
   color: var(--Gray-4, #bdbdbd);
   font-family: Roboto;
@@ -145,19 +134,9 @@ width: 277.763px;
   line-height: 64px; /* 100% */
   width: 277.763px;
   margin-left: 135px;
->>>>>>> a63212ae93a4d66785440f96d5326dbc3abd28db
 }
 .lorum {
   color: var(--Gray-1, #333);
-<<<<<<< HEAD
-font-family: Roboto;
-font-size: 64px;
-font-style: normal;
-font-weight: 700;
-line-height: 64px; /* 100% */;
-width: 186px;
-margin-bottom: 90px;
-=======
   font-family: Roboto;
   font-size: 64px;
   font-style: normal;
@@ -166,7 +145,6 @@ margin-bottom: 90px;
   width: 186px;
   margin-bottom: 90px;
   margin-left: 135px;
->>>>>>> a63212ae93a4d66785440f96d5326dbc3abd28db
 }
 .arrows {
   display: flex;
@@ -176,31 +154,15 @@ margin-bottom: 90px;
 }
 .slide_numbers {
   display: grid;
-<<<<<<< HEAD
-  grid-template-columns:20% 1fr 70%;
-  grid-template-rows: 1fr ;
-  justify-content: start;
-  
-=======
   grid-template-columns: 40% 1fr 50%;
   grid-template-rows: 1fr;
   margin-bottom: 94px;
->>>>>>> a63212ae93a4d66785440f96d5326dbc3abd28db
 }
 .slide_number_01 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-<<<<<<< HEAD
-  justify-self: start;
-  color: var(--Gray-4, #BDBDBD);
-font-family: Roboto;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 100% */
-=======
   color: var(--Gray-4, #bdbdbd);
   font-family: Roboto;
   font-size: 24px;
@@ -208,7 +170,6 @@ line-height: 24px; /* 100% */
   font-weight: 400;
   line-height: 24px; /* 100% */
   margin-left: 135px;
->>>>>>> a63212ae93a4d66785440f96d5326dbc3abd28db
 }
 .slash {
   grid-column-start: 2;
@@ -225,16 +186,6 @@ line-height: 24px; /* 100% */
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-<<<<<<< HEAD
-  justify-self: start;
-  color: var(--Gray-4, #BDBDBD);
-font-family: Roboto;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 100% */
-width: 28.975px;
-=======
   color: var(--Gray-4, #bdbdbd);
   font-family: Roboto;
   font-size: 24px;
@@ -242,7 +193,6 @@ width: 28.975px;
   font-weight: 400;
   line-height: 24px; /* 100% */
   width: 28.975px;
->>>>>>> a63212ae93a4d66785440f96d5326dbc3abd28db
 }
 
 .building__foto {
@@ -761,29 +711,11 @@ width: 28.975px;
   }
 }
 
-<<<<<<< HEAD
-@media screen and (max-width:1200px){
-  .header_logo{
-=======
 @media screen and (max-width: 1100px) {
   .header_logo {
     display: none;
   }
   .building_foto1 {
->>>>>>> a63212ae93a4d66785440f96d5326dbc3abd28db
     display: none;
   }
 }
-<<<<<<< HEAD
-.project-lorum{
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-  grid-area: "building_foto1 building_foto1";
-}
-.nav{
-  align-content: start;
-}
-}
-=======
->>>>>>> a63212ae93a4d66785440f96d5326dbc3abd28db
