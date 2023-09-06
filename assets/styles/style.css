@@ -35,7 +35,7 @@
 .nav__main {
   margin-right: 46px;
   margin-left: 344px;
-  margin-top:  -5px;
+  margin-top: -5px;
   flex-shrink: 0;
 }
 
@@ -101,34 +101,33 @@
   letter-spacing: 2.4px;
   text-transform: uppercase;
 }
-a{
+a {
   text-decoration: none;
   color: var(--Gray-1, #333);
 }
 
 .project-lorum {
   display: grid;
-  align-items:center;
+  align-items: center;
   justify-items: center;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr ;
+  grid-template-rows: 1fr;
 }
-  .project-lorum__right_path{
+.project-lorum__right_path {
   justify-content: stretch;
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start:1 ;
+  grid-row-start: 1;
   grid-row-end: 2;
-
 }
-.project-lorum__left_path{
+.project-lorum__left_path {
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start:1 ;
+  grid-row-start: 1;
   grid-row-end: 2;
 }
-.project{
-  width: 277,76px;
+.project {
+  width: 277, 76px;
   height: 64px;
 }
 
@@ -157,12 +156,8 @@ a{
   font-style: normal;
   font-weight: 300;
   line-height: 64px;
-  margin-bottom: 22px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 64px;
-  grid-area: main-focus__title;
   text-align: left;
+  grid-area: main-focus__title;
   margin-bottom: 3rem;
 }
 
@@ -178,7 +173,10 @@ a{
 }
 
 .main-focus__content_primary-mission {
+  height: 144px;
+  width: 279px;
   grid-area: primary_mission;
+  margin-right: 7rem;
 }
 
 .main-focus__content_secondary-mission {
@@ -193,6 +191,31 @@ a{
 .main-focus__image_two {
   grid-area: image_two;
   margin-right: 2rem;
+}
+
+.our-projects {
+  color: var(--Gray-4, #bdbdbd);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "our-projects__title"
+    "our-projects__content";
+  margin-top: 5rem;
+}
+
+.our-projects__title {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 64px;
+  text-align: left;
+  grid-area: our-projects__title;
+  margin-bottom: 3rem;
+}
+
+.our-projects__content {
+  grid-area: our-projects__content;
 }
 
 .contacts {
