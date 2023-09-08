@@ -836,11 +836,12 @@ a {
   }
 
   .about_h2 {
-    margin-left: 90px;
+    margin-left: 100px;
   }
 
   .project-lorum {
     display: grid;
+    margin-top: 40px;
   }
 
   .button_view_project {
@@ -848,7 +849,7 @@ a {
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
-    margin-left: -80px;
+    margin-right: 160px;
     margin-top: 300px;
   }
 
@@ -860,5 +861,27 @@ a {
   .arrows,
   .slide_numbers {
     display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .project,
+  .lorum,.about_h2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .project,
+  .lorum,.about {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .about_textarea{
+    margin-bottom: 35px;
+  }
+
+  .button_view_project,.button_read_more{
+    padding: 25px 40px;
   }
 }
