@@ -130,7 +130,7 @@ a {
 }
 
 .project {
-  color: var(--Gray-4, #BDBDBD);
+  color: var(--Gray-4, #bdbdbd);
   color: var(--Gray-4, #bdbdbd);
   font-family: Roboto;
   font-size: 64px;
@@ -174,7 +174,7 @@ a {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  color: var(--Gray-4, #BDBDBD);
+  color: var(--Gray-4, #bdbdbd);
   font-family: Roboto;
   font-size: 24px;
   font-style: normal;
@@ -193,7 +193,7 @@ a {
   text-align: start;
   width: 43.822px;
   height: max-content;
-  color: var(--Gray-4, #BDBDBD);
+  color: var(--Gray-4, #bdbdbd);
 }
 
 .slide_number_02 {
@@ -244,8 +244,7 @@ a {
   height: 435px;
   margin-top: 120px;
   margin-bottom: 150px;
-  background-color: var(--1, #FBFBFB);
-
+  background-color: var(--1, #fbfbfb);
 }
 
 .rectangle_foto_1 {
@@ -280,7 +279,6 @@ a {
   height: 140px;
   margin-top: 50px;
   margin-left: 100px;
-
 }
 
 .about_textarea {
@@ -292,7 +290,7 @@ a {
 }
 
 .about_h2 {
-  color: var(--Gray-4, #BDBDBD);
+  color: var(--Gray-4, #bdbdbd);
   font-family: Roboto;
   font-size: 64px;
   font-style: normal;
@@ -322,7 +320,7 @@ a {
   width: 222px;
   height: 71px;
   flex-shrink: 0;
-  background: #FFF;
+  background: #fff;
 }
 
 .main-focus {
@@ -400,21 +398,25 @@ a {
 }
 
 .our-projects__gallery {
-  display: grid;
   grid-area: our-projects__gallery;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 0.5fr 1fr 0.7fr;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.our-projects__image-rectangle {}
+.our-projects__image-rectangle {
+}
 
-.our-projects__image-building {}
+.our-projects__image-building {
+}
 
-.our-projects__image-roof {}
+.our-projects__image-roof {
+}
 
-.our-projects__image-house {}
+.our-projects__image-house {
+}
 
-.our-projects__image-bridge {}
+.our-projects__image-bridge {
+}
 
 .contacts {
   margin-top: 120px;
@@ -493,8 +495,8 @@ a {
   display: none;
 }
 
-.placeinput input:invalid+.place_holder,
-.placeinput textarea:invalid+.place_holder {
+.placeinput input:invalid + .place_holder,
+.placeinput textarea:invalid + .place_holder {
   display: inline;
 }
 
@@ -587,11 +589,11 @@ a {
   text-decoration: none;
 }
 
-.footer__info-link+.footer__info-link {
+.footer__info-link + .footer__info-link {
   margin-top: 16px;
 }
 
-.footer__contacts-link+.footer__contacts-link {
+.footer__contacts-link + .footer__contacts-link {
   margin-top: 32px;
 }
 
@@ -707,7 +709,7 @@ a {
     font-size: 24px;
   }
 
-  .footer__info-link+.footer__info-link {
+  .footer__info-link + .footer__info-link {
     margin-top: 12px;
   }
 }
@@ -739,7 +741,6 @@ a {
 }
 
 @media screen and (max-width: 1200px) {
-
   .building_foto1 {
     max-width: 100vw;
     height: auto;
