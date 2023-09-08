@@ -522,6 +522,7 @@ a {
   border: none;
   text-align: center;
   display: flex;
+  cursor: pointer;
 }
 
 .contacts__btn::after {
@@ -805,44 +806,58 @@ a {
     margin-left: 10px;
   }
 }
+
 @media screen and (max-width: 600px) {
-  .building_foto1{
+  .building_foto1 {
     display: none;
   }
-  .rectangle_foto_1,.rectangle_foto_2,.rectangle_foto_3{
+
+  .rectangle_foto_1,
+  .rectangle_foto_2,
+  .rectangle_foto_3 {
     display: none;
   }
-  .about{
+
+  .about {
     display: grid;
   }
-  .about_textarea{
+
+  .about_textarea {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
     margin-left: 50px;
   }
-  .button_read_more{
+
+  .button_read_more {
     margin-left: 80px;
   }
-  .about_h2{
+
+  .about_h2 {
     margin-left: 90px;
   }
-  .project-lorum{
+
+  .project-lorum {
     display: grid;
   }
-  .button_view_project{
+
+  .button_view_project {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
-    margin-left:-80px;
+    margin-left: -80px;
     margin-top: 300px;
-}
-  .project,.lorum{
-    margin-left:130px;
-}
-  .arrows,.slide_numbers{
-    display:none;
-}
+  }
+
+  .project,
+  .lorum {
+    margin-left: 130px;
+  }
+
+  .arrows,
+  .slide_numbers {
+    display: none;
+  }
 }
