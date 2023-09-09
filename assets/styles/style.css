@@ -346,6 +346,7 @@ a {
 
 .main-focus__content {
   grid-area: main-focus__content;
+  line-height: 36px;
 }
 
 .main-focus__content_wrapper {
@@ -401,26 +402,86 @@ a {
   grid-area: our-projects__gallery;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .our-projects__image-rectangle {
+  margin-right: 1.3rem;
 }
 
-.our-projects__image-building {
+.our-projects__projects {
+  color: #fff;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  position: absolute;
+  left: 6rem;
+  top: 130rem;
+}
+
+.our-projects__view-more {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 6rem;
+  top: 140rem;
+}
+
+.our-projects__arrow-first {
+  position: absolute;
+  left: 12rem;
+  top: 139.7rem;
 }
 
 .our-projects__image-roof {
+  margin-right: 1.3rem;
+  margin-top: 1.3rem;
 }
 
 .our-projects__image-house {
+  margin-right: 1.3rem;
+  margin-top: 1.3rem;
 }
 
 .our-projects__image-bridge {
+  margin-top: 1.3rem;
+}
+
+.our-projects__button {
+  background-color: #333;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  position: absolute;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  width: 222px;
+  padding: 30px 49px;
+  left: 62rem;
+  top: 165rem;
+}
+
+.our-projects__arrow-second {
+  position: absolute;
+  left: 73rem;
+  top: 166.5rem;
 }
 
 .contacts {
   margin-top: 120px;
-  margin-bottom: 120px;
+  margin-bottom: 45%;
 }
 
 .contacts__title {
@@ -865,23 +926,26 @@ a {
 }
 @media screen and (max-width: 500px) {
   .project,
-  .lorum,.about_h2 {
+  .lorum,
+  .about_h2 {
     font-size: 50px;
     line-height: 60px;
   }
 }
 @media screen and (max-width: 350px) {
   .project,
-  .lorum,.about {
+  .lorum,
+  .about {
     font-size: 35px;
     line-height: 40px;
   }
 
-  .about_textarea{
+  .about_textarea {
     margin-bottom: 35px;
   }
 
-  .button_view_project,.button_read_more{
+  .button_view_project,
+  .button_read_more {
     padding: 25px 40px;
   }
 }
