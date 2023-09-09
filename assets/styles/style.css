@@ -150,7 +150,7 @@ a {
   line-height: 64px;
   /* 100% */
   width: 186px;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 
 .arrows {
@@ -850,14 +850,11 @@ a {
     display: none;
   }
 
-  .nav {
+  .nav{
     display: grid;
     grid-area: "nav__main nav__gallery nav__projects nav__certifications nav__contacts";
   }
 
-  .nav__main {
-    margin-left: 0;
-  }
 
   .nav__main,
   .nav__gallery,
@@ -882,6 +879,9 @@ a {
 
   .about {
     display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr ;
+    width: 100%;
   }
 
   .about_textarea {
@@ -889,7 +889,7 @@ a {
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
-    margin-left: 50px;
+    margin-left: 30px;
   }
 
   .button_read_more {
@@ -902,7 +902,7 @@ a {
 
   .project-lorum {
     display: grid;
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   .button_view_project {
@@ -911,7 +911,7 @@ a {
     grid-column-start: 1;
     grid-column-end: 2;
     margin-right: 160px;
-    margin-top: 300px;
+    margin-top: 450px;
   }
 
   .project,
