@@ -16,11 +16,11 @@ Company's bio to raise trust and assure that company stands out in the eyes of p
 
 Making it clear what drives professionals working in the company and answering potential doubts about quality.
 
-##Our projects
+## Our projects
 
 A bigger gallery of best works with an easy access to more details and projects.
 
-##Contacts
+## Contacts
 
 A form to help get new contacts, giving professional advice trust and raising chances to get loyal clients.
 
