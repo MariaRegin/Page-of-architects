@@ -463,14 +463,30 @@ a {
   line-height: 12px;
   letter-spacing: 2.4px;
   text-transform: uppercase;
+  display: flex;
   position: absolute;
   border: none;
   text-align: center;
   cursor: pointer;
+  transition: all 0.5s ease;
   width: 222px;
   padding: 30px 49px;
   left: 62rem;
   top: 165rem;
+}
+
+.our-projects__button::after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 9px;
+  background-repeat: no-repeat;
+  right: 49px;
+}
+
+.our-projects__button:hover {
+  background-color: rgb(162, 159, 159);
+  transform: translateX(5%) translateY(-5%);
 }
 
 .our-projects__arrow-second {
@@ -556,8 +572,8 @@ a {
   display: none;
 }
 
-.placeinput input:invalid+.place_holder,
-.placeinput textarea:invalid+.place_holder {
+.placeinput input:invalid + .place_holder,
+.placeinput textarea:invalid + .place_holder {
   display: inline;
 }
 
@@ -586,7 +602,7 @@ a {
   text-align: center;
   display: flex;
   cursor: pointer;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .contacts__btn::after {
@@ -597,7 +613,6 @@ a {
   background-image: url("../images/icons/arrow-right.svg");
   background-repeat: no-repeat;
   right: 49px;
-
 }
 
 .contacts__btn:hover {
@@ -657,11 +672,11 @@ a {
   text-decoration: none;
 }
 
-.footer__info-link+.footer__info-link {
+.footer__info-link + .footer__info-link {
   margin-top: 16px;
 }
 
-.footer__contacts-link+.footer__contacts-link {
+.footer__contacts-link + .footer__contacts-link {
   margin-top: 32px;
 }
 
@@ -777,7 +792,7 @@ a {
     font-size: 24px;
   }
 
-  .footer__info-link+.footer__info-link {
+  .footer__info-link + .footer__info-link {
     margin-top: 12px;
   }
 }
@@ -857,11 +872,10 @@ a {
     display: none;
   }
 
-  .nav{
+  .nav {
     display: grid;
     grid-area: "nav__main nav__gallery nav__projects nav__certifications nav__contacts";
   }
-
 
   .nav__main,
   .nav__gallery,
@@ -886,8 +900,8 @@ a {
 
   .about {
     display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     width: 100%;
   }
 
@@ -933,7 +947,6 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-
   .project,
   .lorum,
   .about_h2 {
@@ -943,7 +956,6 @@ a {
 }
 
 @media screen and (max-width: 350px) {
-
   .project,
   .lorum,
   .about {
