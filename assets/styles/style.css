@@ -150,7 +150,7 @@ a {
   line-height: 64px;
   /* 100% */
   width: 186px;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 
 .arrows {
@@ -481,7 +481,7 @@ a {
 
 .contacts {
   margin-top: 120px;
-  margin-bottom: 45%;
+  margin-bottom: 120px;
 }
 
 .contacts__title {
@@ -556,8 +556,8 @@ a {
   display: none;
 }
 
-.placeinput input:invalid + .place_holder,
-.placeinput textarea:invalid + .place_holder {
+.placeinput input:invalid+.place_holder,
+.placeinput textarea:invalid+.place_holder {
   display: inline;
 }
 
@@ -586,6 +586,7 @@ a {
   text-align: center;
   display: flex;
   cursor: pointer;
+  transition: all .5s ease;
 }
 
 .contacts__btn::after {
@@ -596,6 +597,12 @@ a {
   background-image: url("../images/icons/arrow-right.svg");
   background-repeat: no-repeat;
   right: 49px;
+
+}
+
+.contacts__btn:hover {
+  background-color: rgb(162, 159, 159);
+  transform: translateX(5%) translateY(-5%);
 }
 
 .footer {
@@ -650,11 +657,11 @@ a {
   text-decoration: none;
 }
 
-.footer__info-link + .footer__info-link {
+.footer__info-link+.footer__info-link {
   margin-top: 16px;
 }
 
-.footer__contacts-link + .footer__contacts-link {
+.footer__contacts-link+.footer__contacts-link {
   margin-top: 32px;
 }
 
@@ -770,7 +777,7 @@ a {
     font-size: 24px;
   }
 
-  .footer__info-link + .footer__info-link {
+  .footer__info-link+.footer__info-link {
     margin-top: 12px;
   }
 }
@@ -850,14 +857,11 @@ a {
     display: none;
   }
 
-  .nav {
+  .nav{
     display: grid;
     grid-area: "nav__main nav__gallery nav__projects nav__certifications nav__contacts";
   }
 
-  .nav__main {
-    margin-left: 0;
-  }
 
   .nav__main,
   .nav__gallery,
@@ -882,6 +886,9 @@ a {
 
   .about {
     display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr ;
+    width: 100%;
   }
 
   .about_textarea {
@@ -889,7 +896,7 @@ a {
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
-    margin-left: 50px;
+    margin-left: 30px;
   }
 
   .button_read_more {
@@ -902,7 +909,7 @@ a {
 
   .project-lorum {
     display: grid;
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   .button_view_project {
@@ -911,7 +918,7 @@ a {
     grid-column-start: 1;
     grid-column-end: 2;
     margin-right: 160px;
-    margin-top: 300px;
+    margin-top: 450px;
   }
 
   .project,
@@ -924,7 +931,9 @@ a {
     display: none;
   }
 }
+
 @media screen and (max-width: 500px) {
+
   .project,
   .lorum,
   .about_h2 {
@@ -932,7 +941,9 @@ a {
     line-height: 60px;
   }
 }
+
 @media screen and (max-width: 350px) {
+
   .project,
   .lorum,
   .about {
