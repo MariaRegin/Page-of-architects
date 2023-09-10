@@ -730,6 +730,7 @@ a {
     grid-template-areas:
       "image_one primary_mission"
       "image_two secondary_mission";
+    max-width: 2vw;
   }
 
   .main-focus__content_secondary-mission {
@@ -744,9 +745,9 @@ a {
   }
 
   .our-projects__projects {
-    font-size: 2rem;
-    line-height: 2.5rem;
-    padding-top: 5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-top: 3rem;
   }
 
   .our-projects__gallery {
@@ -755,15 +756,14 @@ a {
     grid-template-columns: 1fr;
     grid-gap: 1rem;
     justify-items: center;
-    max-width: 3vw%;
+    max-width: 2vw;
   }
 
   .our-projects__button {
     display: grid;
-    grid-area: our-projects__button;
     position: absolute;
-    right: 10rem;
-    bottom: 10rem;
+    left: 50rem;
+    top: 243rem;
   }
 
   .contacts {
