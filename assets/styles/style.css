@@ -14,7 +14,7 @@
 .header {
   display: flex;
   align-items: center;
-  width: 1200px;
+  width: auto;
   height: 102px;
   flex-shrink: 0;
 }
@@ -28,20 +28,30 @@
 .nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content:end;
+  gap: 5rem;
+  width: 100%;
 }
 
 .nav__main {
-  margin-right: 46px;
-  margin-left: 344px;
-  margin-top: -5px;
-  flex-shrink: 0;
+  width: 68px;
+ height: 11.657px;
+ flex-shrink: 0;
+ color: #333;
+ font-family: Roboto;
+ font-size: 12px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 12px; /* 100% */
+ letter-spacing: 2.4px;
+ text-transform: uppercase;
+ 
+ flex-shrink: 0;
 }
 
 .nav__gallery {
   width: 65px;
   height: 12px;
-  margin-right: 61px;
   color: var(--Gray-1, #333);
   font-family: Roboto;
   font-size: 12px;
@@ -56,7 +66,6 @@
 .nav__projects {
   width: 76px;
   height: 11px;
-  margin-right: 55px;
   flex-shrink: 0;
   color: var(--Gray-1, #333);
   font-family: Roboto;
@@ -72,7 +81,6 @@
 .nav__certifications {
   width: 123px;
   height: 11px;
-  margin-right: 49px;
   flex-shrink: 0;
   color: var(--Gray-1, #333);
   font-family: Roboto;
@@ -88,7 +96,6 @@
 .nav__contacts {
   width: 79px;
   height: 11.657px;
-  margin-right: 269px;
   flex-shrink: 0;
   color: var(--Gray-1, #333);
   font-family: Roboto;
@@ -101,11 +108,115 @@
   text-transform: uppercase;
 }
 
-a {
+a{
   text-decoration: none;
   color: var(--Gray-1, #333);
 }
-
+.nav__main a{
+  display: inline-block;
+  color: var(--Gray-1, #333); /* Цвет обычной ссылки */
+  line-height: 1;
+  text-decoration: none; /* Убираем подчеркивание */
+  cursor: pointer;
+}
+.nav__main a:after {
+  background-color: var(--Gray-1, #333); /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 1px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+.nav__main a:hover:after,
+.nav__main a:focus:after {
+  width: 100%;
+}
+.nav__gallery a{
+  display: inline-block;
+  color: var(--Gray-1, #333); /* Цвет обычной ссылки */
+  line-height: 1;
+  text-decoration: none; /* Убираем подчеркивание */
+  cursor: pointer;
+}
+.nav__gallery a:after {
+  background-color: var(--Gray-1, #333); /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 1px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+.nav__gallery a:hover:after,
+.nav__gallery a:focus:after {
+  width: 100%;
+}
+.nav__projects a{
+  display: inline-block;
+  color: var(--Gray-1, #333); /* Цвет обычной ссылки */
+  line-height: 1;
+  text-decoration: none; /* Убираем подчеркивание */
+  cursor: pointer;
+}
+.nav__projects a:after {
+  background-color: var(--Gray-1, #333); /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 1px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+.nav__projects a:hover:after,
+.nav__projects a:focus:after {
+  width: 100%;
+}
+.nav__certifications a{
+  display: inline-block;
+  color: var(--Gray-1, #333); /* Цвет обычной ссылки */
+  line-height: 1;
+  text-decoration: none; /* Убираем подчеркивание */
+  cursor: pointer;
+}
+.nav__certifications a:after {
+  background-color: var(--Gray-1, #333); /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 1px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+.nav__certifications a:hover:after,
+.nav__certifications a:focus:after {
+  width: 100%;
+}
+.nav__contacts a{
+  display: inline-block;
+  color: var(--Gray-1, #333); /* Цвет обычной ссылки */
+  line-height: 1;
+  text-decoration: none; /* Убираем подчеркивание */
+  cursor: pointer;
+}
+.nav__contacts a:after {
+  background-color: var(--Gray-1, #333); /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 1px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+.nav__contacts a:hover:after,
+.nav__contacts a:focus:after {
+  width: 100%;
+}
 .project-lorum {
   display: grid;
   align-items: center;
@@ -240,7 +351,7 @@ a {
   justify-items: start;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 60% 40%;
-  width: 1170px;
+  width:100%;
   height: 435px;
   margin-top: 120px;
   margin-bottom: 150px;
